@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int X,P,sum=0,a=X;
+    scanf("%d %d",&X,&P);
+    while(a>1)
+    {
+        a=X-(P/100)*X;
+        sum=X+a;
+        X=a;
+    }
+    printf("%d",sum);
+}
